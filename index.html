@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <title>Библиотека Urban</title>
 </head>
 <body>
+   
+    <header>
+        <div class="wrapper header-wrapper">
+            <h1 class="header-title">Библиотека Urban</h1>
+            <h2 class="header-desc">Домашнее задание №5</h2>
+     </div>
+
+    </header>
+    <main>
+        <div class="wrapper content-wrapper">
+           
+            <nav class="filters-form">
+                <h3 class="filters-title">Фильтровать список книг</h3>
+                <div class="filter-wrapper">
+                    <label for="filter-genre"><b>Жанр: </b> 
+                        <input type="text" name="filter-genre" id="filterGenre">
+                    </label>
+                </div>
+                <div class="filter-wrapper">
+                    <label for="filter-status"><b>Статус: </b> 
+                        <select name="filter-status" id="filterStatus">
+                            <option value="" selected>Отключить фильтр</option>
+                            <option value="Прочитано">Прочитано</option>
+                            <option value="Не прочитано">Не прочитано</option>
+                        </select>
+                    </label>
+                </div>           
+                
+            </nav>
+            <h2 class="list-title">Список книг</h2>
+            <section class="books-list" id="booksList">
+
+
+                <div class="card-empty book-card" id="bookAddCard">
+                <div class="book-add">
+                    <button class="btn-book-add">Добавить книгу</button>
+                </div>
+            </div>
+
+        </section>
+        
+    </div>
+
+    <!--form for adding / editing book cards-->
+    <div class="popup-shade popup-shade_hidden" id="popupMenu">
+        <div class="popup_menu">
+            <h2 class="popup-title" id="popupTitle">Добавить книгу</h2>
+            <div class="form-edit">
+               
+                <ul class="book-info">
+                    <li> 
+                        <h3 class="book-title">
+                            <label for="formEditTitle">Название:
+                                <input type="text" id="formEditTitle"
+                                placeholder="Введите название книги">
+                            </label>
+                        </h3>
+                    </li>
+                    <li>
+                        <label for="formEditAuthor">Автор:
+                            <input type="text" id="formEditAuthor"
+                            placeholder="Введите имя автора">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="formEditYear">Год издания:
+                            <input type="text" id="formEditYear"
+                            placeholder="Введите год издания">
+                        </label>
+                    </li>
+                    <li>
+                        <label for="form-edit-genre">Жанр:
+                            <input type="text" id="formEditGenre"
+                            placeholder="Введите название жанра">
+                        </label>
+                    </li>
+                    <li><label for="formEditStatus">Статус (Прочитано?):
+                            <input type="checkbox" id="formEditStatus">
+                        </label>
+                    </li>
+                </ul>
+                <div class="book-menu" style="top: 0;">
+                    <button class="btn-book-edit" id="btnBookOk">Ок</button>
+                    <button class="btn-book-delete" id="btnBookCancel">Отмена</button>
+                </div>
+            </div>
+     </div>
+
+    </section>
+
+    </main>
+    <footer>
+        <div class="wrapper footer-wrapper">
+            <div class="book-menu" style="top: 0;">
+                <button class="btn-list-clear" id="btnListClear">
+                    Очистить список
+                </button>
+            </div>
+            <div class="book-counter">
+                Всего книг в списке: <span></span>
+            </div> 
+        </div>
+        
+
+    </footer>
 
     <script src="./scripts/script.js"></script>
 </body>

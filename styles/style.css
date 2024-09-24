@@ -6,16 +6,16 @@
 }
 
 body{
-   background-color: #fbf8f5;
+   background-color: #f5fafb;
 }
 
 header {
-    background-color: #d2c2b5; 
+    background-color: #b5cad2; 
     padding: 40px 20px 20px;
     margin-bottom: 30px;
-    color: #694d44;
+    color: #446964;
     font-weight: bold;
-    border-bottom: 3px solid #eee5da;
+    border-bottom: 3px solid #a7d5e0;
 }
 
 .wrapper{
@@ -59,16 +59,10 @@ header nav{
     padding: 20px;
     border: 1px solid gray;
     border-radius: 25px;
-    position: relative;
-}
-
-.filters-title{
-    margin-left: 10px;
-    position: absolute;
-    top: -18px;
+    position: relative;#446964
     padding: 0 5px;
-    color:#694d44;
-    background-color:#fbf8f5;
+    color:#446964;
+    background-color:#f5f9fb;
     display: inline-block;
 }
 
@@ -135,12 +129,12 @@ header nav{
     border-radius: 10px;
     padding: 0;
     overflow: hidden;
-    box-shadow: 0 5px 5px #ccc;
+    box-shadow: 0 5px 5px #93c0c2;
 }
 
 .book-title{
-   background-color: #eee5da;;
-   color:  #694d44;
+   background-color: #bef7f2;;
+   color:  #446964;
    padding: 15px 30px 15px;
 }
 
@@ -186,15 +180,15 @@ header nav{
 }
 
 .btn-book-edit:hover, .btn-book-edit:active {
-    background-color:rgb(230, 152, 80);
+    background-color:rgb(230, 80, 210);
     
 }
 
 .btn-book-delete:hover, .btn-book-delete:active{
-    background-color:rgb(211, 71, 71);
+    background-color:rgb(211, 71, 192);
 }
 .btn-book-add:hover, .btn-book-add:active{
-    background-color:rgb(61, 199, 142);
+    background-color:rgb(61, 63, 199);
 }
 
 .btn-book-edit, .btn-book-delete, .btn-book-add {
@@ -255,7 +249,7 @@ header nav{
     background: none;
     border: none;
     font-size: 16px;
-    color: #694d44;
+    color: #446964;
     font-weight: 600;
 }
 
@@ -321,7 +315,7 @@ footer{
 }
 
 .btn-list-clear:hover, .btn-list-clear:active{
-    background-color: rgb(187, 50, 50);
+    background-color: rgb(235, 19, 188);
 }
 
 .book-counter{
